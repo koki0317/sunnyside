@@ -1,12 +1,158 @@
-.navbar-lewagon {
+.navbar {
+  // border: 1px solid black; //temporary
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  background: white;
+  padding: 3.2rem 2.5rem;
+
+  .menu-layout {
+    display: none;
+  }
+
+  .hide {
+    opacity: 0.5;
+  }
+
+  .hamburger {
+    transition: all 0.4s ease;
+  }
+
+  .menu-mobile {
+    // border: 1px solid magenta;
+    position: absolute;
+    top: 8rem;
+    left: 6%;
+    width: 88%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-bottom: 2.5rem solid $white;
+      border-left: 2.5rem solid transparent;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: $white;
+
+      padding: 3.6rem 0;
+
+      ul {
+        align-items: center;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+
+        li {
+          a {
+            font-size: 1.9rem;
+            text-decoration: none;
+            color: $dark-grayish-blue;
+
+            &:hover {
+              color: $very-dark-grayish-blue;
+            }
+          }
+        }
+      }
+      .btn-contact {
+        font-family: 'Fraunces', serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 1.8rem 3rem;
+        background-color: $yellow;
+        margin-top: 3rem;
+        border-radius: 3rem;
+        cursor: pointer;
+        color: $dark-desaturated-cyan;
+
+        &:hover {
+          color: $very-dark-grayish-blue;
+          background-color: hsla(51, 100%, 49%, 0.5);
+        }
+      }
+    }
+  }
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
+@media screen and (min-width: 1440px) {
+  .navbar {
+    padding: 3.5rem 5rem 1rem 4rem;
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+    .menu-layout {
+      display: flex;
+      position: static;
+
+      .triangle {
+        display: none;
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: row;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          list-style: none;
+          gap: 5.2rem;
+
+          li {
+            a {
+              font-size: 1.7rem;
+              text-decoration: none;
+              color: $white;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      .btn-contact {
+        font-family: 'Fraunces', serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 1.8rem 3rem;
+        background-color: $white;
+        border-radius: 3rem;
+        margin-left: 5rem;
+        cursor: pointer;
+        color: $very-dark-blue;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.5);
+          color: $white;
+        }
+      }
+    }
+
+    .logo {
+      width: 17rem;
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
 }

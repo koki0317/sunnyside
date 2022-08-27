@@ -1,0 +1,59 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  // border: 1px solid black;
+  padding: 6.5rem 0;
+  background-color: $footer;
+
+  .logo {
+    width: 17rem;
+    // https://codepen.io/sosuke/pen/Pjoqqp
+    filter: brightness(0) invert(40%) sepia(17%) saturate(1164%) hue-rotate(118deg) brightness(97%) contrast(88%);;
+  }
+
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+
+    list-style: none;
+    margin: 4.2rem;
+
+    a {
+      font-size: 1.7rem;
+      text-decoration: none;
+      color: $dark-moderate-cyan;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem 0 1.8rem;
+
+    list-style: none;
+
+    a {
+      img {
+        &:hover {
+          filter: brightness(0) invert(100%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  footer {
+    padding: 7.8rem 0 5rem;
+  }
+}

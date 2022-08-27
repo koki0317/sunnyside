@@ -1,2 +1,118 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%# <%=# image_tag ("design/mobile-design.jpg"), alt: "text", class: "mockup-mobile" %>
+<%# <%=# image_tag ("design/desktop-design.jpg"), alt: "text", class: "mockup-desktop" %>
+<%# <%= image_tag ("design/mobile-menu.jpg"), alt: "text", class: "mockup-mobile" %>
+<%# HERO START %>
+<section class="hero-section">
+  <%= image_tag ("mobile/image-header.jpg"), alt: "text", class: "img-mobile" %>
+  <%= image_tag ("desktop/image-header.jpg"), alt: "text", class: "img-desktop" %>
+  <div class="hero-text">
+    <h1>We are creatives</h1>
+    <%= image_tag ("icon-arrow-down.svg"), alt: "text" %>
+  </div>
+</section>
+<%# HERO END %>
+<%# MIDDLE START %>
+<section class="middle-section">
+  <%= image_tag "mobile/image-transform.jpg", alt: "text", class: "img-mobile" %>
+  <%= image_tag "desktop/image-transform.jpg", alt: "text", class: "img-desktop flex-order-2" %>
+  <div class="text-block flex-order-1 text-block-left">
+    <h2 class="title title-left">Transform your brand</h2>
+    <div class="description">
+      We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+    </div>
+    <div class="btn-wrapper">
+      <a href="#">Learn more</a>
+      <div class="link-decoration yellow"></div>
+    </div>
+  </div>
+  <%# second %>
+  <%= image_tag "mobile/image-stand-out.jpg", alt: "text", class: "img-mobile" %>
+  <%= image_tag "desktop/image-stand-out.jpg", alt: "text", class: "img-desktop flex-order-3" %>
+  <div class="text-block flex-order-4 text-block-right">
+    <h2 class="title title-right">Stand out to the right audience</h2>
+    <div class="description">
+      Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+    </div>
+    <div class="btn-wrapper">
+      <a href="#">Learn more</a>
+      <div class="link-decoration red"></div>
+    </div>
+  </div>
+  <div class="block-wrapper flex-order-5">
+    <%= image_tag "mobile/image-graphic-design.jpg", alt: "text", class: "img-mobile" %>
+    <%= image_tag "desktop/image-graphic-design.jpg", alt: "text", class: "img-desktop" %>
+    <div class="text-block-overlay">
+      <h2 class="title green-tint">Graphic Design</h2>
+      <div class="description green-tint">
+        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      </div>
+    </div>
+  </div>
+  <div class="block-wrapper flex-order-6">
+    <%= image_tag "mobile/image-photography.jpg", alt: "text", class: "img-mobile" %>
+    <%= image_tag "desktop/image-photography.jpg", alt: "text", class: "img-desktop" %>
+    <div class="text-block-overlay">
+      <h2 class="title blue-tint">Photography</h2>
+      <div class="description blue-tint">
+        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      </div>
+    </div>
+  </div>
+</section>
+<%# MIDDLE END %>
+<%# clients start %>
+<section class ="client-testimonials">
+  <h2>Client Testimonials</h2>
+  <div class="clients-wrapper">
+    <div class="client">
+      <%= image_tag "image-emily.jpg", alt: "text" %>
+      <div class="testimonial">
+        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+      </div>
+      <div class="name">
+        Emily R.
+      </div>
+      <div class="position">
+        Marketing Director
+      </div>
+    </div>
+    <div class="client">
+      <%= image_tag "image-thomas.jpg", alt: "text" %>
+      <div class="testimonial">
+        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+      </div>
+      <div class="name">
+        Thomas S.
+      </div>
+      <div class="position">
+        Chief Operating Officer
+      </div>
+    </div>
+    <div class="client">
+      <%= image_tag "image-jennie.jpg", alt: "text" %>
+      <div class="testimonial">
+        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+      </div>
+      <div class="name">
+        Jennie F.
+      </div>
+      <div class="position">
+        Business Owner
+      </div>
+    </div>
+  </div>
+</section>
+<%# clients end %>
+<%# Gallery start %>
+<section class="gallery-section">
+  <%= image_tag "mobile/image-gallery-milkbottles.jpg", alt: "text", class: "img-mobile" %>
+  <%= image_tag "mobile/image-gallery-orange.jpg", alt: "text", class: "img-mobile" %>
+  <%= image_tag "mobile/image-gallery-cone.jpg", alt: "text", class: "img-mobile" %>
+  <%= image_tag "mobile/image-gallery-sugar-cubes.jpg", alt: "text", class: "img-mobile" %>
+  <%# Desktop %>
+  <%= image_tag "desktop/image-gallery-milkbottles.jpg", alt: "text", class: "img-desktop" %>
+  <%= image_tag "desktop/image-gallery-orange.jpg", alt: "text", class: "img-desktop" %>
+  <%= image_tag "desktop/image-gallery-cone.jpg", alt: "text", class: "img-desktop" %>
+  <%= image_tag "desktop/image-gallery-sugarcubes.jpg", alt: "text", class: "img-desktop" %>
+</section>
+<%# Gallery end %>
