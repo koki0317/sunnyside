@@ -1,0 +1,35 @@
+.hukidasi-wrapper {
+  position: absolute;
+  top: 6rem;
+  right: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  .hukidasi-triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 2.5rem solid $white;
+    border-left: 2.5rem solid transparent;
+    margin-right: 1rem;
+  }
+
+  .hukidasi-body {
+    background-color: $white;
+    padding: 3.5% 7%;
+    font-size: 3rem;
+    border-radius: 0.4rem;
+  }
+}
+
+.hidden {
+  display: none
+}
+
+@media screen and (min-width: 1440px) {
+  .hukidasi-wrapper {
+    display: none;
+  }
+}

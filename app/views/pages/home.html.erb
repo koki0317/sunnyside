@@ -1,16 +1,39 @@
 <%# <%=# image_tag ("design/mobile-design.jpg"), alt: "text", class: "mockup-mobile" %>
 <%# <%=# image_tag ("design/desktop-design.jpg"), alt: "text", class: "mockup-desktop" %>
 <%# <%= image_tag ("design/mobile-menu.jpg"), alt: "text", class: "mockup-mobile" %>
-<%# HERO START %>
-<section class="hero-section">
-  <%= image_tag ("mobile/image-header.jpg"), alt: "text", class: "img-mobile" %>
-  <%= image_tag ("desktop/image-header.jpg"), alt: "text", class: "img-desktop" %>
-  <div class="hero-text">
-    <h1>We are creatives</h1>
-    <%= image_tag ("icon-arrow-down.svg"), alt: "text" %>
-  </div>
-</section>
-<%# HERO END %>
+<div data-controller="menu">
+  <nav class="navbar">
+    <%= image_tag ("logo.svg"), alt: "text", class: "logo" %>
+    <div class="menu-layout" data-menu-target="hamburger">
+      <div class="triangle"></div>
+      <div class="menu">
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+        </ul>
+        <div class="btn-contact">Contact</div>
+      </div>
+    </div>
+    <div class ="hamburger" data-action="click->menu#open">
+      <%= image_tag ("icon-hamburger.svg"), alt: "text" %>
+    </div>
+  </nav>
+  <%# HERO START %>
+  <section class="hero-section">
+    <div class="hukidasi-wrapper" data-menu-target="clickme">
+      <div class="hukidasi-triangle"></div>
+      <div class="hukidasi-body">Click me!</div>
+    </div>
+    <%= image_tag ("mobile/image-header.jpg"), alt: "text", class: "img-mobile" %>
+    <%= image_tag ("desktop/image-header.jpg"), alt: "text", class: "img-desktop" %>
+    <div class="hero-text">
+      <h1>We are creatives</h1>
+      <%= image_tag ("icon-arrow-down.svg"), alt: "text" %>
+    </div>
+  </section>
+  <%# HERO END %>
+</div>
 <%# MIDDLE START %>
 <section class="middle-section">
   <%= image_tag "mobile/image-transform.jpg", alt: "text", class: "img-mobile" %>
