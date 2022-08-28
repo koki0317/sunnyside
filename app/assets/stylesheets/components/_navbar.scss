@@ -106,11 +106,11 @@
       .menu {
         display: flex;
         flex-direction: row;
+        align-items: center;
 
         ul {
           display: flex;
           flex-direction: row;
-          align-items: center;
           list-style: none;
           gap: 5.2rem;
 
